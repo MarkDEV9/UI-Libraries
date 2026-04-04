@@ -1,6 +1,8 @@
 # Scandinavian UI Library
-<img width="854" height="469" alt="image" src="https://github.com/user-attachments/assets/b0ff1e60-f7fc-4cc4-958a-cbf85f31a23e" />
-<img width="880" height="494" alt="image" src="https://github.com/user-attachments/assets/5160c56e-6abb-4059-b565-14e8ccfb4bc8" />
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/5ec14c78-3981-47f2-94d2-a39429e6a6a7" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ed014ba9-3ffd-4a79-bd1e-24c24de2f3c0" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/410bd4aa-c325-4da7-ba6c-7b81c9a6b548" />
 
 ## Loading the Library
 
