@@ -136,17 +136,26 @@ function Library.CreateLib(WindowTitle, WindowIcon, ToggleKey)
 
 	local titleX = 16
 	if WindowIcon and tostring(WindowIcon) ~= "" then
+		local logoHolder = Instance.new("Frame")
+		logoHolder.BackgroundColor3 = C.Surface2
+		logoHolder.Size = UDim2.fromOffset(36, 36)
+		logoHolder.Position = UDim2.fromOffset(11, 9)
+		logoHolder.BorderSizePixel = 0
+		logoHolder.Parent = header
+		Corner(logoHolder, 10)
+		Stroke(logoHolder, C.Stroke, 0.15, 1)
+
 		local logo = Instance.new("ImageLabel")
-		logo.BackgroundColor3 = C.Surface
-		logo.Size = UDim2.fromOffset(34, 34)
-		logo.Position = UDim2.fromOffset(12, 10)
+		logo.BackgroundTransparency = 1
+		logo.Size = UDim2.fromOffset(22, 22)
+		logo.AnchorPoint = Vector2.new(0.5, 0.5)
+		logo.Position = UDim2.new(0.5, 0, 0.5, 0)
 		logo.Image = WindowIcon
 		logo.ScaleType = Enum.ScaleType.Fit
 		logo.BorderSizePixel = 0
-		logo.Parent = header
-		Corner(logo, 999)
-		Stroke(logo, C.Stroke, 0.25, 1)
-		titleX = 56
+		logo.Parent = logoHolder
+
+		titleX = 58
 	end
 
 	Label(header, WindowTitle or "UI Library", 14, Enum.Font.GothamBold, UDim2.new(0, titleX, 0, 0), UDim2.new(0, 320, 1, 0), C.Text)
